@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "d0b2479c-02c4-4f9a-914c-570d639495de",
+		"name": "Task4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "input Colours",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "input Dessert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\":\"0001\",\r\n   \"type\":\"donut\",\r\n   \"name\":\"Cake\",\r\n   \"image\":{\r\n      \"url\":\"images/0001.jpg\",\r\n      \"width\":200,\r\n      \"height\":200\r\n   },\r\n   \"thumbnail\":{\r\n      \"url\":\"images/thumbnails/0001.jpg\",\r\n      \"width\":32,\r\n      \"height\":32\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/inputDessert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"inputDessert"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
